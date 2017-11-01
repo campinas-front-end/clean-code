@@ -1,1 +1,1 @@
-const productsList = await fetch('http://localhost:8080/products');
+const products = await fetch('http://localhost:8080/products');
