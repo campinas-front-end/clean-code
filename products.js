@@ -1,0 +1,1 @@
+const products = await fetch('http://localhost:8080/products');
