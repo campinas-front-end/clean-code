@@ -1,7 +1,7 @@
 import postCart from './cartService.js';
 
-const userCart = {
-  userCartProducts: [...]
+const cart = {
+  products: [...]
 };
 
-const cart = await postCart(userCart);
+const cart = await postCart(cart);
