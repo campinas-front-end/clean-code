@@ -3,12 +3,12 @@ import {
   fetchProductImage
 } from './productsServices';
 
-const getProductsAndImage = () => {
+const getProductsAndImage = async () => {
   const products = await fetchProducts();
   const productsWithImages = products.map(addImageToProduct);
 }
 
-const addImageToProduct = (product) => {
+export const addImageToProduct = async (product) => {
   const image = await fetchProductImage(product.id);
   const productWithImage = {
     ...product,
